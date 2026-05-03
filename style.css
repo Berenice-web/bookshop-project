@@ -1,0 +1,445 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  background-color: #4b7883;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+}
+
+.site-title {
+  flex: 1;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  font-family: 'Cursive', sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.main-nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav a.active {
+  text-decoration: underline;
+}
+
+.main-content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.produits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.produit {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.produit img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.voir-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #4b7883;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.voir-btn:hover {
+  background-color: #365e6e;
+}
+
+footer {
+  background-color: #4b7883;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #FFF8F0;
+  color: #333;
+}
+
+header.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.site-title {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5rem;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+}
+
+.main-nav {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 50px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-family: 'Georgia', serif;
+}
+
+.main-nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.catalogue-layout {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.cat-btn {
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+  min-width: 130px;
+}
+
+.livre-img {
+  width: 180px;
+}
+
+.overlay-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.description-box {
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 250px;
+  font-size: 0.95rem;
+}
+
+.description-box p {
+  margin-top: 10px;
+}   
+
+.image-ovale img {
+  width: 220px;
+  height: auto;
+  border-radius: 50% / 30%;
+  object-fit: cover;
+}
+
+.apropos-container {
+  background-color: #FFF8F0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title h2, .section-title.small h3 {
+  background-color: #ddd;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.apropos-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.apropos-left, .apropos-right {
+  flex: 1;
+  min-width: 260px;
+}
+
+.texte-box, .valeurs-box {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.texte-box p, .valeurs-box p {
+  margin-bottom: 15px;
+}
+
+.apropos-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-center {
+  width: 120px;
+}
+
+.mini-img {
+  width: 60px;
+  margin-top: 15px;
+}
+
+.apropos-footer {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.apropos-footer a {
+  color: green;
+  text-decoration: none;
+}
+
+.fiche-container {
+  background-color: #FFF8F0;
+  padding: 40px 20px;
+}
+
+.panier-btn {
+  float: right;
+  background-color: #ffeb99;
+  border: 1px solid #e0c97d;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.livres {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.fiche-livre {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.livre-img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+.livre-details {
+  flex: 1;
+  text-align: left;
+}
+
+.livre-details h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.livre-details small {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.genre-badge {
+  background-color: #406080;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.resume {
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+.prix-action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.prix {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.acheter-btn {
+  background-color: #2e5c75;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.catalogue-btn {
+  background-color: #cfd8dc;
+  color: #333;
+  border-radius: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+  margin-top: 30px;
+}
+
+ <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Un fond légèrement gris */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Centrer le bloc sur la page */
+            padding: 1rem;
+        }
+
+        /* Styles pour le bouton principal */
+        .btn-primary {
+            @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out;
+        }
+
+        /* Styles spécifiques pour le bloc du livre */
+        .book-preview-card {
+            /* Flexbox pour l'alignement des éléments à l'intérieur */
+            @apply flex flex-col items-center text-center;
+            /* Arrière-plan, bordures, ombres, coins arrondis */
+            @apply bg-white p-4 rounded-xl shadow-lg;
+            /* Largeur maximale pour que le bloc ne soit pas trop grand */
+            @apply max-w-xs w-full;
+            /* Transition pour les effets de survol */
+            @apply transform hover:scale-105 transition duration-300 ease-in-out;
+        }
+
+        .book-cover {
+            /* Taille de l'image de couverture */
+            @apply w-32 h-48 object-cover rounded-md shadow-md;
+            /* Marge sous l'image */
+            @apply mb-4;
+        }
+
+        .book-title {
+            @apply text-xl font-bold text-gray-800 mb-1;
+        }
+
+        .book-author {
+            @apply text-sm text-gray-600 mb-2;
+        }
+
+        .book-price {
+            @apply text-lg font-bold text-blue-700 mb-4;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Exemple de bloc d'aperçu de livre -->
+    <div class="book-preview-card">
+        <!-- Image de couverture du livre -->
+        <img src="https://placehold.co/128x192/4F46E5/FFFFFF?text=Couverture+Livre"
+             alt="Couverture du livre Le Grand Rêve"
+             class="book-cover">
+
+        <!-- Titre du livre -->
+        <h3 class="book-title">Le Grand Rêve</h3>
+
+        <!-- Auteur du livre -->
+        <p class="book-author">par Jeanne Dupont</p>
+
+        <!-- Prix du livre -->
+        <p class="book-price">22,50 €</p>
+
+        <!-- Bouton d'action -->
+        <a href="fiche-livre-grand-reve.html" class="btn-primary">
+            Voir les détails
+        </a>
+    </div>
