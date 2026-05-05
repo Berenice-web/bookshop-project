@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue chez ASM BOOKSHOP</title>
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuration de la police Inter -->
+
+    <!-- Styles personnalisés -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f2f8; /* Couleur de fond légère */
+            background-color: #f0f2f8;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -17,62 +20,80 @@
             padding: 1rem;
         }
 
-        /* Style du logo */
         .logo-text {
-            font-family: serif; /* Pour une touche plus classique comme sur l'image */
-            font-size: 2.25rem; /* text-4xl */
+            font-family: serif;
+            font-size: 2.25rem;
             font-style: italic;
             color: #333;
         }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: #e0e7ff;
+            color: #2563eb;
+        }
+
+        .welcome-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 700px;
+        }
     </style>
 </head>
+
 <body>
 
-    <!-- En-tête de la page (navigation et logo) -->
-    <header class="w-full max-w-6xl bg-white rounded-xl shadow-lg p-4 md:p-6 flex flex-col sm:flex-row justify-between items-center mb-8">
-        <div class="flex items-center mb-4 sm:mb-0">
-            <!-- Logo ASM BOOKSHOP -->
-           
-            <h1 class="logo-text">ASM BOOKSHOP</h1>
-        </div>
-        <nav class="flex space-x-2 md:space-x-4">
-            <a href="accueil.html" class="nav-link">Accueil</a>
-            <a href="catalogue.html" class="nav-link">Catalogue</a>
-            <a href="apropos.html" class="nav-link">À Propos</a>
-            <a href="panier.php" class="nav-link">Panier</a>
-                <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553L16.5 4H6.618l-.217-.866A1 1 0 005.618 2H3zM5 16a2 2 0 114 0 2 2 0 01-4 0zm10 0a2 2 0 114 0 2 2 0 01-4 0z"></path>
-                </svg>
-            </a>
-        </nav>
-    </header>
+<header class="w-full max-w-6xl bg-white rounded-xl shadow-lg p-4 md:p-6 flex flex-col sm:flex-row justify-between items-center mb-8">
+    <div class="flex items-center mb-4 sm:mb-0">
+        <h1 class="logo-text">ASM BOOKSHOP</h1>
+    </div>
 
-    <!-- Conteneur principal du message d'accueil -->
-    <main class="w-full max-w-6xl flex justify-center">
-        <div class="welcome-card">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Bienvenue chez <span class="text-blue-600"> ASM BOOKSHOP</span> !
-            </h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                Nous sommes enchantés de vous accueillir dans notre univers dédié aux livres. Que vous soyez un lecteur passionné à la recherche de votre prochaine aventure littéraire, un étudiant en quête de connaissances, ou simplement curieux de découvrir de nouvelles histoires, vous êtes au bon endroit.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                Parcourez notre vaste catalogue où vous trouverez des milliers de titres, des classiques intemporels aux dernières nouveautés, en passant par des genres variés pour tous les goûts : romans, essais, bandes dessinées, livres pour enfants, et bien plus encore.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                Nous mettons tout en œuvre pour vous offrir une expérience de lecture exceptionnelle, avec une navigation facile, et des descriptions détaillées.
-            </p>
-            <p class="text-xl font-semibold text-gray-800 mb-2">
-                Plongez dans nos pages et laissez-vous emporter par la magie des mots.
-            </p>
-            <p class="text-xl font-bold text-blue-700">
-                Bonne lecture et belles découvertes !
-            </p>
-            <p class="text-md text-gray-600 mt-6">
-                L'équipe de <span class="font-semibold">AMS BOOKSHOP</span>
-            </p>
-        </div>
-    </main>
+    <nav class="flex space-x-2 md:space-x-4">
+        <a href="accueil.html" class="nav-link">Accueil</a>
+        <a href="catalogue.html" class="nav-link">Catalogue</a>
+        <a href="apropos.html" class="nav-link">À Propos</a>
+        <a href="panier.php" class="nav-link">Panier</a>
+    </nav>
+</header>
+
+<main class="w-full max-w-6xl flex justify-center">
+    <div class="welcome-card">
+
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Bienvenue chez <span class="text-blue-600">ASM BOOKSHOP</span> !
+        </h2>
+
+        <p class="text-lg text-gray-700 mb-4">
+            Nous sommes enchantés de vous accueillir dans notre univers dédié aux livres.
+        </p>
+
+        <p class="text-lg text-gray-700 mb-4">
+            Découvrez notre catalogue : romans, BD, essais, livres pour enfants et bien plus.
+        </p>
+
+        <p class="text-lg text-gray-700 mb-6">
+            Navigation simple, expérience fluide, et passion du livre ❤️
+        </p>
+
+        <p class="text-xl font-semibold text-gray-800">
+            Bonne lecture !
+        </p>
+
+        <p class="text-md text-gray-600 mt-6">
+            L'équipe de <span class="font-semibold">ASM BOOKSHOP</span>
+        </p>
+
+    </div>
+</main>
 
 </body>
 </html>
